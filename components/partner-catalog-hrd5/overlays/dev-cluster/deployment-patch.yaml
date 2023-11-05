@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog-hrd5
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/jbaxter1-tenant/partner-catalog-1/partner-catalog-hrd5@sha256:4fc690963c3e67979d023cf1e6218b8106f98368ea9e8210ecb35b4bff7fa6df
+        name: my-java-springboot
+        resources: {}
+status: {}
